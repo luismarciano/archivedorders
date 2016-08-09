@@ -1,0 +1,5 @@
+app/etc/modules/Luisdesign_ArchivedOrders.xml
+app/code/community/Luisdesign/ArchivedOrders
+app/design/frontend/base/default/layout/luisdesign/archivedorders.xml
+app/design/frontend/base/default/template/luisdesign/archivedorders/orders.phtml
+app/design/frontend/base/default/template/luisdesign/archivedorders/view.phtml
