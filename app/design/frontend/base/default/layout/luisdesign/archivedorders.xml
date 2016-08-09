@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<layout>
+
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" ifconfig="luisdesign_archivedorders/settings/archivedorders_enabled">
+                <name>luisdesign_archivedorders</name>
+                <path>archivedorders/index</path>
+                <label>Archived Orders</label>
+            </action>
+        </reference>
+    </customer_account>
+
+    <luisdesign_archivedorders_index_index>
+	    <update handle="customer_account" />
+	    <reference name="my.account.wrapper">
+	        <block type="core/template" name="luisdesign_archivedorders_content" template="luisdesign/archivedorders/orders.phtml"/>
+	    </reference>  
+	</luisdesign_archivedorders_index_index>
+
+    <luisdesign_archivedorders_view_index>
+        <update handle="customer_account" />
+        <reference name="my.account.wrapper">
+            <block type="core/template" name="luisdesign_archivedorders_view" template="luisdesign/archivedorders/view.phtml"/>
+        </reference>  
+    </luisdesign_archivedorders_view_index>
+
+</layout>
